@@ -12,12 +12,25 @@ public class AnimalsApp {
         //Действия животных
         c1.swim(10);
         c2.run(200);
+        c3.run(500);
         d1.swim(2);
         d2.run(100);
 
         System.out.println("\nСоздано котов: " + Cat.getCount());
         System.out.println("Создано собак: " + Dog.getCount());
         System.out.println("Создано животных: " + Animals.getCount());
+
+        System.out.println("\nКОТЫ И ТАРЕЛКА");
+        Cat[] cats = {new Cat("Васька", 25), new Cat("Мурзик", 20),
+                new Cat("Пушистик", 12), new Cat("Мяу", 5)};
+
+        Plate plate = new Plate(50);
+        plate.addFood(2);
+        for (Cat cat : cats) {
+            plate.printInfo();
+            cat.eat(plate);
+            cat.infoHungryCat();
+        }
 
     }
 }

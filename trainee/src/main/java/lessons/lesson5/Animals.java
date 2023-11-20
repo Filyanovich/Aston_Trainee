@@ -16,6 +16,9 @@ public class Animals {
         count++;
     }
 
+    public Animals() {
+    }
+
     public static int getCount() {
         return count;
     }
