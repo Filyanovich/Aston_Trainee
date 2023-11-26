@@ -15,6 +15,7 @@ public class AppData {
             }
             writer.write("\n");
 
+
             for (int i = 0; i < data.length; i++) {
                 for (int j = 0; j < data[i].length; j++) {
                     writer.write(Integer.toString(data[i][j]));
