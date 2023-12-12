@@ -1,1 +1,3 @@
-/.idea/
+/gradle_project/.gradle/
+/gradle_project/.idea/
+/gradle_project/gradle/
